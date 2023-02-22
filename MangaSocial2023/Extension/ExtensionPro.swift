@@ -6,7 +6,7 @@
 //
 import Foundation
 import UIKit
-
+//URL
 let register_url = ""
 let login_url = "https://api-dev-manga.tozi.vn/api/login"
 let Verufyaccount_url  = "https://api-dev-manga.tozi.vn/api/send-verify"
