@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HomeCLVCell" customModule="MangaSocial2023" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="294" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="294" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iea-tg-53z">
+                        <rect key="frame" x="10" y="10" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3bD-rp-xd5">
+                        <rect key="frame" x="268.33333333333331" y="9.9999999999999982" width="15.666666666666686" height="22.333333333333329"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="chevron.right" catalog="system"/>
+                    </button>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="1TT-KY-Z50">
+                        <rect key="frame" x="0.0" y="41" width="294" height="159"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="M8Y-B9-Npr">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <connections>
+                            <outlet property="dataSource" destination="gTV-IL-0wX" id="bQb-hZ-kmf"/>
+                            <outlet property="delegate" destination="gTV-IL-0wX" id="bOI-Ma-t9y"/>
+                        </connections>
+                    </collectionView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="Iea-tg-53z" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="0do-BW-JCt"/>
+                <constraint firstItem="1TT-KY-Z50" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="KLm-Oq-5sl"/>
+                <constraint firstItem="3bD-rp-xd5" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="Tds-5d-taV"/>
+                <constraint firstItem="Iea-tg-53z" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="WOe-cJ-DkZ"/>
+                <constraint firstAttribute="trailing" secondItem="3bD-rp-xd5" secondAttribute="trailing" constant="10" id="YWt-B2-XfZ"/>
+                <constraint firstAttribute="bottom" secondItem="1TT-KY-Z50" secondAttribute="bottom" id="YeZ-6L-Nxp"/>
+                <constraint firstAttribute="trailing" secondItem="1TT-KY-Z50" secondAttribute="trailing" id="bjp-c9-sj3"/>
+                <constraint firstItem="1TT-KY-Z50" firstAttribute="top" secondItem="Iea-tg-53z" secondAttribute="bottom" constant="10" id="iED-76-Ibc"/>
+            </constraints>
+            <size key="customSize" width="294" height="200"/>
+            <connections>
+                <outlet property="collectionViewHomeMain" destination="1TT-KY-Z50" id="Ntp-rG-6rt"/>
+                <outlet property="labelName" destination="Iea-tg-53z" id="LcB-KE-mDj"/>
+            </connections>
+            <point key="canvasLocation" x="204.58015267175571" y="73.239436619718319"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="chevron.right" catalog="system" width="97" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

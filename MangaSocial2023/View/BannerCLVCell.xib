@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BannerCLVCell" customModule="MangaSocial2023" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="405" height="259"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="405" height="259"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PUr-Ff-pWT" customClass="FSPagerView" customModule="FSPagerView">
+                        <rect key="frame" x="0.0" y="0.0" width="405" height="259"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="alwaysBounceHorizontal" value="YES"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="removesInfiniteLoopForSingleItem" value="YES"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isInfinite" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <outlet property="dataSource" destination="gTV-IL-0wX" id="m6N-Zz-CGz"/>
+                            <outlet property="delegate" destination="gTV-IL-0wX" id="7kB-Un-Ebl"/>
+                        </connections>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e29-gD-5QJ" customClass="FSPageControl" customModule="FSPagerView">
+                        <rect key="frame" x="15" y="234" width="375" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="5jA-MH-6g8"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="hidesForSinglePage" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="e29-gD-5QJ" firstAttribute="bottom" secondItem="PUr-Ff-pWT" secondAttribute="bottom" id="HgY-ig-Suh"/>
+                <constraint firstItem="PUr-Ff-pWT" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="NDt-It-2O1"/>
+                <constraint firstItem="e29-gD-5QJ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="TGx-vl-oby"/>
+                <constraint firstAttribute="trailing" secondItem="e29-gD-5QJ" secondAttribute="trailing" constant="15" id="aRd-yX-yQT"/>
+                <constraint firstItem="PUr-Ff-pWT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="lV3-jf-LVJ"/>
+                <constraint firstAttribute="trailing" secondItem="PUr-Ff-pWT" secondAttribute="trailing" id="ypJ-rr-E2t"/>
+                <constraint firstAttribute="bottom" secondItem="PUr-Ff-pWT" secondAttribute="bottom" id="zcb-6f-qQc"/>
+            </constraints>
+            <size key="customSize" width="405" height="259"/>
+            <connections>
+                <outlet property="pageControl" destination="e29-gD-5QJ" id="lj2-V6-eG8"/>
+                <outlet property="pagerView" destination="PUr-Ff-pWT" id="K3z-ad-k43"/>
+            </connections>
+            <point key="canvasLocation" x="140.76923076923077" y="-9.5971563981042642"/>
+        </collectionViewCell>
+    </objects>
+</document>

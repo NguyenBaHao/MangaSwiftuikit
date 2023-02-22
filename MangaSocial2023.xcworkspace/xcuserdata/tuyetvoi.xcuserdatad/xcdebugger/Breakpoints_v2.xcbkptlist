@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "56FF04B9-0A4D-4749-B761-EDE09C2B7A10"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3A7A15B9-1295-4C5B-9F83-F8909E4D5C99"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MangaSocial2023/Viewcontroller/MainMangaViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "collectionView(_:numberOfItemsInSection:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A357B87B-5936-4298-AF97-2833BFB0505E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MangaSocial2023/Model/MangaInfoModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
+            landmarkName = "initLoad(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A357B87B-5936-4298-AF97-2833BFB0505E - bb4c4e192218087"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MangaSocial2023.MangaInfoModel.initLoad(Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; MangaSocial2023.MangaInfoModel"
+                  moduleName = "MangaSocial2023"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tuyetvoi/Documents/Manga2023/MangaSocial2023/MangaSocial2023/Model/MangaInfoModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "856">
+               </Location>
+               <Location
+                  uuid = "A357B87B-5936-4298-AF97-2833BFB0505E - bb4c4e192218087"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MangaSocial2023.MangaInfoModel.initLoad(Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; MangaSocial2023.MangaInfoModel"
+                  moduleName = "MangaSocial2023"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tuyetvoi/Documents/Manga2023/MangaSocial2023/MangaSocial2023/Model/MangaInfoModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "1072">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AC72211D-3D6B-4F09-9372-652132059116"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MangaSocial2023/Viewcontroller/MangaReaderViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

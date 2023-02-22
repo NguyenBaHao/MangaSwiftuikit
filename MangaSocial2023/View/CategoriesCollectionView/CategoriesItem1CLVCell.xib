@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CategoriesItem1CLVCell" customModule="MangaSocial2023" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="383" height="164"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="383" height="164"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="akR-RR-ue6">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="164"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="anD-ec-Qwq"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSa-SW-rgY">
+                        <rect key="frame" x="110" y="10" width="263" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mG8-Xx-94p">
+                        <rect key="frame" x="110" y="41" width="263" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nf7-XB-uxd">
+                        <rect key="frame" x="110" y="72" width="263" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="akR-RR-ue6" secondAttribute="bottom" id="064-na-p6J"/>
+                <constraint firstAttribute="trailing" secondItem="Nf7-XB-uxd" secondAttribute="trailing" constant="10" id="7xB-D8-RM1"/>
+                <constraint firstAttribute="trailing" secondItem="TSa-SW-rgY" secondAttribute="trailing" constant="10" id="C7Y-oo-Tbu"/>
+                <constraint firstItem="mG8-Xx-94p" firstAttribute="top" secondItem="TSa-SW-rgY" secondAttribute="bottom" constant="10" id="I2s-0H-YFS"/>
+                <constraint firstItem="akR-RR-ue6" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="IDe-IY-ruV"/>
+                <constraint firstItem="TSa-SW-rgY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="LN5-3i-l31"/>
+                <constraint firstItem="Nf7-XB-uxd" firstAttribute="top" secondItem="mG8-Xx-94p" secondAttribute="bottom" constant="10" id="Lad-FT-gOG"/>
+                <constraint firstAttribute="trailing" secondItem="mG8-Xx-94p" secondAttribute="trailing" constant="10" id="O4H-zf-Bcp"/>
+                <constraint firstItem="akR-RR-ue6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="OCL-Zh-BnX"/>
+                <constraint firstItem="TSa-SW-rgY" firstAttribute="leading" secondItem="akR-RR-ue6" secondAttribute="trailing" constant="10" id="cYb-iR-YHw"/>
+                <constraint firstItem="Nf7-XB-uxd" firstAttribute="leading" secondItem="akR-RR-ue6" secondAttribute="trailing" constant="10" id="l4c-T3-Scp"/>
+                <constraint firstItem="mG8-Xx-94p" firstAttribute="leading" secondItem="akR-RR-ue6" secondAttribute="trailing" constant="10" id="pgw-7D-OeV"/>
+            </constraints>
+            <size key="customSize" width="383" height="164"/>
+            <connections>
+                <outlet property="imageCover" destination="akR-RR-ue6" id="ZO6-Uc-UD1"/>
+                <outlet property="labeUpdate" destination="Nf7-XB-uxd" id="pfI-UM-1bm"/>
+                <outlet property="labelAuthod" destination="mG8-Xx-94p" id="vcS-rn-bOs"/>
+                <outlet property="labelName" destination="TSa-SW-rgY" id="GBk-el-PAi"/>
+            </connections>
+            <point key="canvasLocation" x="357.69230769230768" y="28.436018957345969"/>
+        </collectionViewCell>
+    </objects>
+</document>
